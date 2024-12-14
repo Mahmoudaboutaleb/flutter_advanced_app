@@ -6,15 +6,15 @@ import 'package:flutter_advanced_app/core/themes/colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DocApp extends StatelessWidget {
- const DocApp({super.key, required this.appRouter});
+  const DocApp({super.key, required this.appRouter});
   final AppRouter appRouter;
 
   @override
   Widget build(BuildContext context) {
-        SystemChrome.setSystemUIOverlayStyle(
+    SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent, 
-        statusBarIconBrightness: Brightness.dark, 
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.dark,
       ),
     );
 
@@ -25,8 +25,8 @@ class DocApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Advanced App',
         theme: ThemeData(
-          primaryColor:ColorsManager.mainBlue ,
-          scaffoldBackgroundColor: Colors.white
+          primaryColor: ColorsManager.mainBlue,
+          scaffoldBackgroundColor: Colors.white,
         ),
         onGenerateRoute: appRouter.generateRoute,
         initialRoute: Routes.onBoardingScren,
