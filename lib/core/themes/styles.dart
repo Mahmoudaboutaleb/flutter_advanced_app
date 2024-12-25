@@ -19,46 +19,61 @@ class TextStyles {
     fontWeight: FontWeightHelper.regular,
     color: ColorsManager.mainBlue,
   );
-  static TextStyle font24Black700Bold = TextStyle(
-    fontSize: 24.sp,
-    fontWeight: FontWeightHelper.bold,
-    color: Colors.black,
-  );
   static TextStyle font11Grey500 = TextStyle(
     fontSize: 11.sp,
     fontWeight: FontWeightHelper.medium,
     color: Color(0xFF757575),
   );
 
-  static TextStyle font24BlueBold = TextStyle(
-    fontSize: 24.sp,
-    fontWeight: FontWeightHelper.bold,
-    color: ColorsManager.mainBlue,
-  );
-
-  static TextStyle font32BlueBold = TextStyle(
-    fontSize: 32.sp,
-    fontWeight: FontWeightHelper.bold,
-    color: ColorsManager.mainBlue,
+  static TextStyle font13DarkBlueregular = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorsManager.darkBlue,
   );
   static TextStyle font14GreyReqular = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeightHelper.regular,
     color: ColorsManager.grey,
   );
+  static TextStyle font14BlueSemiBold = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.semiBold,
+    color: ColorsManager.mainBlue,
+  );
   static TextStyle font14LightGreyReqular = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeightHelper.regular,
     color: ColorsManager.lighterGrey,
+  );
+  static TextStyle font14DarkBlueMedieum = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: ColorsManager.darkBlue,
+  );
+  static TextStyle font15DarkBlueMedieum = TextStyle(
+    fontSize: 15.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: ColorsManager.darkBlue,
   );
   static TextStyle font16Whitew500 = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeightHelper.medium,
     color: Colors.white,
   );
-  static TextStyle font14DarkBlueMedieum = TextStyle(
-    fontSize: 14.sp,
-    fontWeight: FontWeightHelper.medium,
-    color: ColorsManager.darkBlue,
+  static TextStyle font24BlueBold = TextStyle(
+    fontSize: 24.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: ColorsManager.mainBlue,
+  );
+  static TextStyle font24Black700Bold = TextStyle(
+    fontSize: 24.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: Colors.black,
+  );
+
+  static TextStyle font32BlueBold = TextStyle(
+    fontSize: 32.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: ColorsManager.mainBlue,
   );
 }

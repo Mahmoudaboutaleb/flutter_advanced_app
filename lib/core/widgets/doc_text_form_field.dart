@@ -13,6 +13,7 @@ class DocTextFormField extends StatelessWidget {
   final bool? isSecure;
   final Widget? suffixIcon;
   final TextEditingController controller;
+  final Function(String?) validator;
 
   const DocTextFormField(
       {super.key,
@@ -24,12 +25,14 @@ class DocTextFormField extends StatelessWidget {
       this.isSecure,
       this.suffixIcon,
       required this.hintText,
-      required this.controller});
+      required this.controller,
+      required this.validator});
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
+      validator: (value) => validator(value),
       style: TextStyles.font14DarkBlueMedieum,
       cursorColor: ColorsManager.mainBlue,
       obscureText: isSecure ?? false,
@@ -54,6 +57,14 @@ class DocTextFormField extends StatelessWidget {
               borderSide:
                   BorderSide(color: ColorsManager.lighterGrey, width: 1.3),
             ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: BorderSide(color: Colors.red, width: 1.3),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: BorderSide(color: Colors.red, width: 1.3),
+        ),
       ),
     );
   }
