@@ -5,6 +5,8 @@ import 'package:flutter_advanced_app/features/home/ui/home_screen.dart';
 import 'package:flutter_advanced_app/features/login/logic/cubit/login_cubit.dart';
 import 'package:flutter_advanced_app/features/login/ui/login_screen.dart';
 import 'package:flutter_advanced_app/features/onboarding_screen/onboarding_screen.dart';
+import 'package:flutter_advanced_app/features/sign%20up/logic/cubit/signup_cubit.dart';
+import 'package:flutter_advanced_app/features/sign%20up/ui/signup_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AppRouter {
@@ -14,9 +16,15 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => OnboardingScreen());
       case Routes.loginScreen:
         return MaterialPageRoute(
-            builder: (context) => BlocProvider(
+            builder: (_) => BlocProvider(
                 create: (context) => getIt<LoginCubit>(),
                 child: LoginScreen()));
+      case Routes.signUpScreen:
+        return MaterialPageRoute(
+            builder: (_) => BlocProvider(
+                  create: (context) => getIt<SignupCubit>(),
+                  child: SignupScreen(),
+                ));
       case Routes.homeScreen:
         return MaterialPageRoute(builder: (context) => HomeScreen());
       default:
