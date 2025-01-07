@@ -3,7 +3,7 @@ description: "A new Flutter project."
 
 publish_to: "none" # Prevent publishing this app to pub.dev (private project)
 
-version: 1.0.0+1 # App version (major.minor.patch+build)
+version: 1.0.1+1 # App version (major.minor.patch+build)
 
 environment:
   sdk: ^3.5.4 # Required Dart SDK version
@@ -12,6 +12,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   dio: ^5.7.0
   easy_localization: ^3.0.7
+  firebase_core: ^3.9.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.6
