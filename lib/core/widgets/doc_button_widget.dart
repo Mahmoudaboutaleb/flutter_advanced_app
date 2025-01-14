@@ -30,6 +30,6 @@ class DocButtonWidget extends StatelessWidget {
         onPressed: () {
           onTap();
         },
-        child: Text(text, style: TextStyles.font16Whitew500));
+        child: Text(text, style: TextStyles.font16WhiteMedium));
   }
 }
